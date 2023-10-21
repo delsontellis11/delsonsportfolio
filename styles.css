@@ -1,0 +1,126 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('background.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: #fff; /* Set background color to white */
+    color: #000; /* Set text color to black */
+}
+
+/* Header Styles */
+.navbar {
+    background-color: #000; /* Set background color of the header to black */
+    color: #fff; /* Set text color in the header to white */
+    padding: 10px 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.brand a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.nav-links {
+    list-style: none;
+}
+
+.nav-links li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Main Content Styles */
+.container h1, h2, h3 {
+    color: #000;
+    font-weight: bold;
+}
+
+.container .highlight {
+    color: #000;
+    background-color: #fff;
+    padding: 5px 10px;
+    border-radius: 3px;
+}
+
+.container p {
+    margin: 10px 0;
+    line-height: 1.5;
+}
+
+.section {
+    background-color: #fff;
+    color: #000;
+    padding: 40px 0;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.row img {
+    max-width: 100%;
+}
+
+/* Project Styles */
+.project h3 {
+    font-weight: bold;
+}
+
+/* Contact Form Styles */
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #000;
+    border-radius: 5px;
+}
+
+form button[type="Submit"] {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Tab Styles */
+.tab-link {
+    cursor: pointer;
+}
+
+.tab-link:hover {
+    text-decoration: underline;
+}
+
+.content {
+    display: none;
+}
+
+.content.active {
+    display: block;
+}

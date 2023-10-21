@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delson Tellis - Portfolio</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Use an external CSS file for styling -->
+    <style>
+        body {
+            background-image: url('background.jpg');
+            background-size: 100%; /* Adjust the value as needed (e.g., 50% for 50% of the viewport width) */
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <div class="brand">
+                    <a href="#">Delson Tellis</a>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="first-section">
+            <div class="container">
+                <div class="intro">
+                    <h1>Hello, I'm <span class="highlight">Delson Tellis</span></h1>
+                    <p>A Dedicated Computer Science Student with a Passion for Technology.</p>
+                </div>
+                <div class="profile-image">
+                    <img src="delson.jpg" alt="Delson Tellis Profile">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- About Section -->
+    <div id="about" class="section">
+        <div class "container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="delson.jpg" alt="About Image">
+                </div>
+                <div class="about-col-2">
+                    <h2>About Me</h2>
+                    <p>Greetings! I'm Delson Tellis, a second-year Computer Science student at St. Joseph Engineering College, Mangalore. I'm passionate about technology and eager to learn and collaborate in the world of computer science. As I continue to develop my skills and knowledge, I'm excited about the possibilities that lie ahead in my academic and professional journey. Feel free to connect with me for discussions or collaborations.</p>
+                    <div class="tab-titles">
+                        <p class="tab-link" onclick="showContent('skills')">Skills</p>
+                        <p class="tab-link" onclick="showContent('education')">Education</p>
+                        <p class="tab-link" onclick="showContent('achievements')">Achievements</p>
+                    </div>
+                    <div class="tab-contents">
+                        <div class="content" id="skills">
+                            <ul>
+                                <li>HTML/CSS</li>
+                                <li>Java</li>
+                                <li>Robotics and Automation</li>
+                            </ul>
+                        </div>
+                        <div class="content" id="education">
+                            <ul>
+                                <li>10th - Christ King English Medium High School</li>
+                                <li>PU - Christ King PU College Karkala</li>
+                                <li>BE - St Joseph Engineering College Mangalore</li>
+                            </ul>
+                        </div>
+                        <div class="content" id="achievements">
+                            <ul>
+                                <li>Python Basics - InfosySpringBoard</li>
+                                <li>Business Writing - Coursera</li>
+                                <li>IUCEE - Clean and Green Campus</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Section -->
+    <div id="portfolio" class="section">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="project">
+                <div class="project-content">
+                    <img src="project1.jpg" alt="Smart Helmet" class="project-image">
+                    <div class="project-description">
+                        <h3>Smart Helmet - Arduino-based Accident Notification System</h3>
+                        <p>The Smart Helmet is an innovative project equipped with sensors and Arduino technology to detect accidents and send immediate notifications to nearby hospitals for prompt assistance. It was developed during the second-semester mini-project.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="project">
+                <div class="project-content">
+                    <img src="project2.jpg" alt="Farm-Buddy" class="project-image">
+                    <div class="project-description">
+                        <h3>Farm-Buddy Agricultural Database</h3>
+                        <p>The Farmer Details Management System is a web-based project designed to streamline the management of farmer-related information, including crop details, sales records, and equipment ownership. It provides an efficient platform for farmers to update their information, enhancing data accuracy and accessibility.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div id="contact" class="section">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h2>Contact Me</h2>
+                    <p>Email: 21a10.delson@sjec.ac.in</p>
+                    <p>Phone: 8310990921</p>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Emailid" placeholder="Your Email" required>
+                        <textarea name="Message" rows="4" placeholder="Send Your Message here"></textarea>
+                        <button type="Submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function showContent(contentId) {
+            var contents = document.querySelectorAll('.content');
+            for (var i = 0; i < contents.length; i++) {
+                contents[i].style.display = 'none';
+            }
+            var selectedContent = document.getElementById(contentId);
+            selectedContent.style.display = 'block';
+        }
+    </script>
+</body>
+</html>
